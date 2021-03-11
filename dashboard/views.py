@@ -11,3 +11,5 @@ def pivot_data(request):
     dataset = TicketSells.objects.all()
     data = serializers.serialize('json',dataset)
     return JsonResponse(data,safe=False)
+
+

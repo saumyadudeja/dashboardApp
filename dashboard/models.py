@@ -4,6 +4,9 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 # Create your models here.
 
 class TicketSells(models.Model):
+    class Meta:
+        verbose_name = 'Ticket Sells'
+        verbose_name_plural = 'Ticket Sells'
     TYPES = (
        ('single', 'single ticket'),
        ('monthly', 'monthly ticket'),
@@ -40,6 +43,7 @@ class Survey(models.Model):
     ptUsageStartDate = models.DateField()
 
     #class PTusage(models.Model):
+    #   
 
 
     

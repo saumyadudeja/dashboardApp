@@ -1,0 +1,10 @@
+"month,year",ticket_type,ticket_count
+"Jan,2021",single,133
+"Jan,2021",monthly,243
+"Jan,2021",other,560
+"Feb,2021",single,267
+"Feb,2021",monthly,456
+"Feb,2021",other,765
+"Mar,2021",single,213
+"Mar,2021",monthly,614
+"Mar,2021",other,124

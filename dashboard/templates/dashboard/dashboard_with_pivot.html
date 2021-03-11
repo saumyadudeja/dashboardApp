@@ -28,9 +28,24 @@ $.ajax({
             report: {
                 dataSource: {
                     type: "json",
-                    data: processData(data)
+                    data: processData(data),
+                    mapping:{
+                        "ticket_type":{
+                            "caption": "Type of Ticket"
+                        },
+                        "ticket_count":{
+                            "caption": "Ticket Count",
+                            "type": "number"
+                        },
+                        
+                    }
                 },
-                slice: {}
+                "slice": {
+                    "rows": [{
+                        "uniqueName": "ticket_type"
+                    }],
+                    
+                }
             }
         });
         new Flexmonster({
@@ -38,7 +53,7 @@ $.ajax({
             componentFolder: "https://cdn.flexmonster.com/",
             width: "100%",
             height: 430,
-            //toolbar: true,
+            toolbar: true,
             report: {
                 dataSource: {
                     type: "json",
