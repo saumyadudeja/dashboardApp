@@ -1,3 +1,3 @@
 # dashboardApp
 
-### made with Djano and Datawrapper api to visualise charts and graphs
+### made with Django and Datawrapper api to visualise charts and graphs
